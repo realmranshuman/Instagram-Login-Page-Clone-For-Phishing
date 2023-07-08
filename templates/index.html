@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Instagram Login Page</title>
+	<link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="header">
+		<div class="top">
+			<div class="logo">
+				<img src="/static/instagram.png" alt="instagram" style="width: 175px;">
+			</div>
+			<div class="form">
+			<form action="/signup" method="post">
+				<div class="input_field">
+					<input type="text" name="username" placeholder="Phone number, username, or email" class="input">
+				</div>
+				<div class="input_field">
+					<input type="password" name="password" placeholder="Password" class="input">
+				</div>
+				<input type="submit" value="Log in" class="btn">
+			</div>
+			</form>
+			<div class="or">
+				<div class="line"></div>
+				<p>OR</p>
+				<div class="line"></div>
+			</div>
+			<div class="dif">
+				<div class="fb">
+					<img src="/static/facebook.png" alt="facebook">
+					<p>Log in with Facebook</p>
+				</div>
+				<div class="forgot">
+					<a href="#">Forgot password?</a>
+				</div>
+			</div>
+		</div>
+		<div class="signup">
+			<p>Don't have an account? <a href="#">Sign up</a></p>
+		</div>
+		<div class="apps">
+			<p>Get the app.</p>
+			<div class="icons">
+				<a href="#"><img src="/static/appstore.png" alt="appstore"></a>
+				<a href="#"><img src="/static/googleplay.png" alt="googleplay"></a>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="links">
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Support</a></li>
+				<li><a href="#">Press</a></li>
+				<li><a href="#">API</a></li>
+				<li><a href="#">Jobs</a></li>
+				<li><a href="#">Privacy</a></li>
+				<li><a href="#">Terms</a></li>
+				<li><a href="#">Directory</a></li>
+				<li><a href="#">Profiles</a></li>
+				<li><a href="#">Hashtags</a></li>
+				<li><a href="#">Language</a></li>
+			</ul>
+		</div>
+		<div class="copyright">
+			&copy; <span id="currentYear"></span> Instagram from META
+		</div>
+	</div>
+</div>
+<script>
+	// JavaScript code to set the current year dynamically
+	var currentYear = new Date().getFullYear();
+	document.getElementById("currentYear").innerHTML = currentYear;
+</script>
+</body>
+</html>
